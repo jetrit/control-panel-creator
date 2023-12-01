@@ -23,8 +23,8 @@ componentPlacement = [
           [panel[0]-15          , 7.5         , led     , "data led"],
           ];
 
-//create the panel
-Panel(componentPlacement, panel);
+Case(panel, internalCaseDepth);
 
-// or the case
-//Case(panel, internalCaseDepth);
+translate([120,0,0]){
+    Panel(componentPlacement, panel);
+}
